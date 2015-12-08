@@ -93,13 +93,17 @@ body{
         line-height: 2.2rem;
       }
     }
-    button{
+    a{
+      align-self: center;
+      @include bp(tablet) {
+        align-self: flex-end;
+      }
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
       height: 50px;
       width: 150px;
       border: none;
-      box-shadow: none;
-      text-shadow: none;
-      border-radius: 0px;
       background: $color_red;
       font-size: 1.15rem;
       color: white;
@@ -109,12 +113,6 @@ body{
             color: black;
             font-weight: bold;
           }
-    }
-    a{
-      align-self: center;
-      @include bp(tablet) {
-        align-self: flex-end;
-      }
     }
 }
 
@@ -135,19 +133,23 @@ body{
     width: 44%;
   }
   img{
-    border: 2px solid $color_medium-grey;
+    border: 1px solid black;
   }
 }
 
 .feature1{
   width: 100%;
   text-align: center;
-  min-height: 300px;
+  min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   @include bp(tablet) {
     margin: 20px 0;
+    min-height: 300px;
+  }
+  @include bp(tablet) {
+    min-height: 400px;
   }
   img{
     width: 95%;
@@ -159,9 +161,13 @@ body{
 .feature2{
   width: 80%;
   position: relative;
-  min-height: 350px;
+  min-height: 250px;
   @include bp(tablet) {
+    min-height: 350px;
     width: 100%;
+  }
+  @include bp(tablet) {
+    min-height: 450px;
   }
 }
 
@@ -186,9 +192,15 @@ body{
 
 .feature3{
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   text-align: center;
   position: relative;
+  @include bp(tablet) {
+    min-height: 300px;
+  }
+  @include bp(tablet) {
+    min-height: 400px;
+  }
 }
 
 .feature3 img{
@@ -323,9 +335,9 @@ body{
 }
 
 .endnote img {
-  width: 20%;
+  width: 18%;
   @include bp(tablet) {
-    width: 10%;
+    width: 6%;
   }
 }
 

@@ -23,13 +23,17 @@ body:not(.home) .site-content{
 .main-navigation{
   position: fixed;
   display: flex;
-  height: 110px;
+  height: 70px;
   justify-content: space-between;
   align-items: stretch;
   transition: border .3s ease-in-out;
+  @include bp(tablet) {
+    height: 90px;
+  }
   a{
     text-decoration: none;
     color: $color_pink;
+    font-weight: bold;
   }
   ul a{
     padding: 2px 7px;
@@ -47,9 +51,9 @@ body:not(.home) .site-content{
   z-index: 1000;
   background: white;
   opacity: 0.95;
-  border-top: 5px solid $color_medium-grey;
+  border-top: 2.5px solid $color_medium-grey;
   border-bottom: 2.5px solid $color_medium-grey;
-  box-shadow: 3px 1px 15px;
+  box-shadow: 3px 1px 5px;
   a{
     text-decoration: none;
     color: black;
@@ -114,28 +118,20 @@ body:not(.home) .site-content{
 
 .current-menu-item, .current-page-ancestor{
   &:first-child{
-    font-weight: bold;
-    border-left: 3px solid $color_pink;
     border-bottom: 3px solid $color_pink;
   }
   &:nth-child(2){
-    font-weight: bold;
-    border-top: 3px solid $color_pink;
-    border-right: 3px solid $color_pink;
+    border-bottom: 3px solid $color_pink;
   }
 }
 
-.fixed-nav{
-  .current-menu-item,.current-page-ancestor{
+.fixed-nav {
+  .current-menu-item, .current-page-ancestor{
     &:first-child{
-      font-weight: bold;
-      border-left: 3px solid $color_red;
       border-bottom: 3px solid $color_red;
     }
     &:nth-child(2){
-      font-weight: bold;
-      border-top: 3px solid $color_red;
-      border-right: 3px solid $color_red;
+      border-bottom: 3px solid $color_red;
     }
   }
 }

@@ -110,8 +110,8 @@ get_header(); ?>
 						<?php endforeach; endif; ?>
 				</div>
 		<?php else: ?>
-					<hr class="decorative">
 					<div class="about-section about-display">
+						<hr class="decorative">
 							<h2><?php echo $section['section_name']?></h2>
 							<?php echo $section['section_content'];?>
 
@@ -147,5 +147,4 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri();?>/images/8-bit-heart.png" alt="8 bit Heart" />
 		</div>
   </main>
-</div>
 <?php get_footer(); ?>
