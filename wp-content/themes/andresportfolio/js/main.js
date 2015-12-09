@@ -50,7 +50,7 @@ jQuery(function ($)  {
   $bgImage.load(function() {
     setTimeout(function(){
       stickyNav();
-    },1000);
+    },2000);
   });
   // Then re-run on scroll
   $window.scroll(function () {
