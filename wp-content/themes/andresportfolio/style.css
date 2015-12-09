@@ -267,7 +267,8 @@ textarea {
 /* Headings */
 h1 {
   font-family: "archistico";
-  font-weight: bold; }
+  font-weight: bold;
+  color: black; }
 
 h2 {
   font-family: "archistico";

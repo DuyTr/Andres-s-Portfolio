@@ -26,7 +26,6 @@ jQuery(function ($)  {
 // A helper function to check whether nav should be fixed
   var stickyNav = function () {
       var scrollTop = $window.scrollTop();
-      debugger;
       if ( scrollTop > stickyNavTop) {
           $displayBranding.css('visibility','visible');
           $homeBranding.hide();
@@ -49,12 +48,10 @@ jQuery(function ($)  {
   // Initialize nav classes...
 
   $bgImage.load(function() {
-    setTimeout(function(){
       stickyNav();
-    },4000);
-    $window.scroll(function () {
-        stickyNav();
-    });
+  });
+  $window.scroll(function () {
+      stickyNav();
   });
   // Then re-run on scroll
 
