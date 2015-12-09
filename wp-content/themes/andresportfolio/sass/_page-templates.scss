@@ -59,6 +59,7 @@ body{
 
 .project-overview{
   width: 100%;
+  max-width: 620px;
   height: auto;
   display: flex;
   flex-flow: column wrap;
@@ -126,6 +127,7 @@ body{
 /* feature gallery */
 .project-features{
   width: 100%;
+  max-width: 520px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -134,6 +136,7 @@ body{
   }
   img{
     border: 1px solid black;
+    box-shadow: 1px 3px 4px;
   }
 }
 
@@ -148,7 +151,7 @@ body{
     margin: 20px 0;
     min-height: 300px;
   }
-  @include bp(tablet) {
+  @include bp(desktop) {
     min-height: 400px;
   }
   img{
@@ -166,7 +169,7 @@ body{
     min-height: 350px;
     width: 100%;
   }
-  @include bp(tablet) {
+  @include bp(desktop) {
     min-height: 450px;
   }
 }
@@ -179,7 +182,7 @@ body{
     position: absolute;
     z-index: 100;
     left: 0;
-    bottom: 0;
+    bottom: 20%;
   }
   &:nth-child(2){
     max-width: 245px;
@@ -198,7 +201,7 @@ body{
   @include bp(tablet) {
     min-height: 300px;
   }
-  @include bp(tablet) {
+  @include bp(desktop) {
     min-height: 400px;
   }
 }
@@ -249,18 +252,17 @@ body{
 
 .skill-grid{
   width: 100%;
-  max-width: 999px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   @include bp(tablet) {
   }
     .skill{
-      width:150px;
+      width:120px;
       display: flex;
       flex-flow: column wrap;
       text-align: center;
-      margin: 20px 2vw;
+      margin: 20px 2.5vw;
       @include bp(tablet) {
         width: 200px;
       }
@@ -272,7 +274,7 @@ body{
     .circle-box{
       position: absolute;
       top: 25px;
-      left: 40px;
+      left: 25px;
       width: 70px;
       height: 70px;
       @include bp(tablet) {
@@ -321,6 +323,7 @@ body{
 }
 
 .gallery-large img{
+  border: 1px solid black;
   width: 100%;
   margin: 10px 0;
   @include bp(tablet) {

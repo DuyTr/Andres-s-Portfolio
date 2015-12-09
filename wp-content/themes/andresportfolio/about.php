@@ -147,4 +147,5 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri();?>/images/8-bit-heart.png" alt="8 bit Heart" />
 		</div>
   </main>
+</div>
 <?php get_footer(); ?>

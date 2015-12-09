@@ -8,6 +8,10 @@ jQuery(function ($)  {
     'monochrome' : false
 }).css('background-color', '#ffffff');
 
+
+
+
+
   /* Sticky Navbar */
   var $window = $(window),
     $mainNav = $('.main-navigation'), // nav wrapper element
@@ -16,6 +20,7 @@ jQuery(function ($)  {
     $homeBranding = $('.home-site-branding'),
     headerHeightOffset = $mastHead.height() - $mainNav.height(),
     stickyNavTop = $mainNav.scrollTop() + headerHeightOffset;
+
 
 // A helper function to check whether nav should be fixed
   var stickyNav = function () {

@@ -284,7 +284,7 @@ h2, h3 {
 
 h1 {
   font-size: 1.1rem;
-  margin-bottom: 0; }
+  margin: 0; }
   @media (min-width: 667px) {
     h1 {
       font-size: 2.3rem; } }
@@ -304,7 +304,7 @@ h3 {
       font-size: 1.22rem; } }
 
 .site-description {
-  margin-top: -10px;
+  margin: 0;
   font-size: 0.7rem; }
   @media (min-width: 667px) {
     .site-description {
@@ -675,24 +675,20 @@ a {
 
 /* Header */
 .home .site-header {
-  width: 100%;
-  height: 350px;
-  background: url("../../images/dinosaur.jpg") no-repeat center center/cover;
   position: relative; }
-  @media (min-width: 667px) {
-    .home .site-header {
-      height: 500px; } }
-  @media (min-width: 950px) {
-    .home .site-header {
-      height: 600px; } }
-  @media (min-width: 1200px) {
-    .home .site-header {
-      height: 700px; } }
+  .home .site-header .bg-image {
+    z-index: -1;
+    min-width: 100%;
+    height: auto; }
 
 body:not(.home) .site-content {
-  padding-top: 130px; }
+  padding-top: 70px; }
+  @media (min-width: 667px) {
+    body:not(.home) .site-content {
+      padding-top: 90px; } }
 
 .main-navigation {
+  z-index: 1000;
   position: fixed;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -760,7 +756,7 @@ body:not(.home) .site-content {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  height: 110px;
+  height: 70px;
   left: 0;
   bottom: 0; }
   .home .home-site-branding a {
@@ -769,6 +765,9 @@ body:not(.home) .site-content {
     transition: color .5s ease-in-out; }
     .home .home-site-branding a:hover {
       color: #FA1041; }
+  @media (min-width: 667px) {
+    .home .home-site-branding {
+      height: 90px; } }
 
 .menu-menu-1-container {
   width: 40%;
@@ -811,19 +810,16 @@ body:not(.home) .site-content {
   border-bottom: 3px solid #FA1041; }
 
 .site-footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin: 50px auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background: #514E4E; }
 
 .contact-info {
-  padding: 1rem 0 0.5rem;
+  padding: 20px 0;
   width: 90%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -853,15 +849,17 @@ body:not(.home) .site-content {
             align-items: center;
     box-sizing: content-box;
     padding: 3.3px;
-    border: 2px solid #979797;
     border-radius: 50%; }
     @media (min-width: 667px) {
       .contact-info .fa {
         font-size: 2.4rem;
-        padding: 6px; } }
+        padding: 6px;
+        margin: 0 50px; } }
   @media (min-width: 667px) {
     .contact-info {
-      width: 60%; } }
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1002,6 +1000,7 @@ body .site-content {
 
 .project-overview {
   width: 100%;
+  max-width: 620px;
   height: auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1072,6 +1071,7 @@ body .site-content {
 /* feature gallery */
 .project-features {
   width: 100%;
+  max-width: 520px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1085,7 +1085,8 @@ body .site-content {
     .project-features {
       width: 44%; } }
   .project-features img {
-    border: 1px solid black; }
+    border: 1px solid black;
+    box-shadow: 1px 3px 4px; }
 
 .feature1 {
   width: 100%;
@@ -1104,7 +1105,7 @@ body .site-content {
     .feature1 {
       margin: 20px 0;
       min-height: 300px; } }
-  @media (min-width: 667px) {
+  @media (min-width: 950px) {
     .feature1 {
       min-height: 400px; } }
   .feature1 img {
@@ -1119,7 +1120,7 @@ body .site-content {
     .feature2 {
       min-height: 350px;
       width: 100%; } }
-  @media (min-width: 667px) {
+  @media (min-width: 950px) {
     .feature2 {
       min-height: 450px; } }
 
@@ -1131,7 +1132,7 @@ body .site-content {
     position: absolute;
     z-index: 100;
     left: 0;
-    bottom: 0; }
+    bottom: 20%; }
   .feature2 img:nth-child(2) {
     max-width: 245px;
     width: 50%;
@@ -1147,7 +1148,7 @@ body .site-content {
   @media (min-width: 667px) {
     .feature3 {
       min-height: 300px; } }
-  @media (min-width: 667px) {
+  @media (min-width: 950px) {
     .feature3 {
       min-height: 400px; } }
 
@@ -1201,7 +1202,6 @@ body .site-content {
 
 .skill-grid {
   width: 100%;
-  max-width: 999px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1212,7 +1212,7 @@ body .site-content {
       -ms-flex-pack: center;
           justify-content: center; }
   .skill-grid .skill {
-    width: 150px;
+    width: 120px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1220,7 +1220,7 @@ body .site-content {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     text-align: center;
-    margin: 20px 2vw; }
+    margin: 20px 2.5vw; }
     @media (min-width: 667px) {
       .skill-grid .skill {
         width: 200px; } }
@@ -1230,7 +1230,7 @@ body .site-content {
   .circle .circle-box {
     position: absolute;
     top: 25px;
-    left: 40px;
+    left: 25px;
     width: 70px;
     height: 70px; }
     @media (min-width: 667px) {
@@ -1294,6 +1294,7 @@ body .site-content {
               flex-flow: row wrap; } }
 
 .gallery-large img {
+  border: 1px solid black;
   width: 100%;
   margin: 10px 0; }
   @media (min-width: 667px) {
