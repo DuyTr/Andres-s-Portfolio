@@ -90,15 +90,13 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'appear-script', get_template_directory_uri() . '/build/js/jquery.appear.min.js',array( 'jquery' ));
+	wp_enqueue_script( 'circle-progress-script', get_template_directory_uri() . '/build/js/circle-progress.min.js',array( 'jquery' ),true);
 
-	wp_enqueue_script( 'circle-progress-script', get_template_directory_uri() . '/build/js/circle-progress.min.js',array( 'jquery' ));
+	wp_enqueue_script( 'transit-script', get_template_directory_uri() . '/build/js/jquery.transit.min.js',array( 'jquery' ),true);
 
-	wp_enqueue_script( 'transit-script', get_template_directory_uri() . '/build/js/jquery.transit.min.js',array( 'jquery' ));
+	wp_enqueue_script( 'noisy-background-script', get_template_directory_uri() . '/build/js/jquery.noisy.min.js',array( 'jquery' ),true);
 
-	wp_enqueue_script( 'noisy-background-script', get_template_directory_uri() . '/build/js/jquery.noisy.min.js',array( 'jquery' ));
-
-	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/build/js/main.min.js',array( 'jquery' ));
+	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/build/js/main.min.js',array( 'jquery' ),true);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
