@@ -1445,4 +1445,5 @@ body .site-content {
   margin: 10px; }
   @media (min-width: 667px) {
     .project-gallery img {
-      margin: 10px 2vw; } }
+      margin: 10px 2vw;
+      height: 40vw; } }

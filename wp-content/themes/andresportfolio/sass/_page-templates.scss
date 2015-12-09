@@ -442,6 +442,6 @@ body{
   margin: 10px;
   @include bp(tablet) {
     margin: 10px 2vw;
-
+    height: 40vw;
   }
 }
