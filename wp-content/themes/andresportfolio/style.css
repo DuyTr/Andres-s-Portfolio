@@ -1133,18 +1133,19 @@ body .site-content {
       min-height: 450px; } }
 
 .feature2 img {
-  min-width: 175px;
-  max-height: 80%; }
+  min-width: 175px; }
   .feature2 img:first-child {
     width: 60%;
     max-width: 295px;
     position: absolute;
     z-index: 100;
     left: 0;
-    bottom: 20%; }
+    bottom: 10%;
+    max-height: 90%; }
   .feature2 img:nth-child(2) {
     max-width: 245px;
     width: 50%;
+    max-height: 80%;
     position: absolute;
     top: 0;
     right: 0; }

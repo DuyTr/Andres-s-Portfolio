@@ -176,18 +176,19 @@ body{
 
 .feature2 img{
   min-width: 175px;
-  max-height: 80%;
   &:first-child{
     width:60%;
     max-width: 295px;
     position: absolute;
     z-index: 100;
     left: 0;
-    bottom: 20%;
+    bottom: 10%;
+    max-height: 90%;
   }
   &:nth-child(2){
     max-width: 245px;
     width: 50%;
+    max-height: 80%;
     position: absolute;
     top: 0;
     right: 0;
