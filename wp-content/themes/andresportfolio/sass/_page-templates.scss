@@ -339,10 +339,10 @@ body{
 
 .endnote img {
   width: 18%;
-  height: auto;
+  height: 18%;
   @include bp(tablet) {
     width: 6%;
-    heighi: auto;
+    height: 6%;
   }
 }
 

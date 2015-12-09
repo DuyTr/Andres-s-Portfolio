@@ -1316,11 +1316,11 @@ body .site-content {
 
 .endnote img {
   width: 18%;
-  height: auto; }
+  height: 18%; }
   @media (min-width: 667px) {
     .endnote img {
       width: 6%;
-      heighi: auto; } }
+      height: 6%; } }
 
 /* Contact Page */
 .wpcf7 {
