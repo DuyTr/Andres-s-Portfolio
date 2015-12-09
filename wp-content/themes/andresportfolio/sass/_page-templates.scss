@@ -338,12 +338,9 @@ body{
 }
 
 .endnote img {
-  width: 18%;
-  height: 18%;
-  @include bp(tablet) {
-    width: 6%;
-    height: 6%;
-  }
+  width: 70px;
+  height: 70px;
+
 }
 
 /* Contact Page */
