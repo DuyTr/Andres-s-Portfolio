@@ -51,11 +51,12 @@ jQuery(function ($)  {
     setTimeout(function(){
       stickyNav();
     },2000);
+    $window.scroll(function () {
+        stickyNav();
+    });
   });
   // Then re-run on scroll
-  $window.scroll(function () {
-      stickyNav();
-  });
+
 
 
   /* About Page */
