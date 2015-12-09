@@ -127,7 +127,7 @@ body{
 /* feature gallery */
 .project-features{
   width: 100%;
-  max-width: 520px;
+  max-width: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -339,8 +339,10 @@ body{
 
 .endnote img {
   width: 18%;
+  height: auto;
   @include bp(tablet) {
     width: 6%;
+    heighi: auto;
   }
 }
 
