@@ -109,9 +109,9 @@ get_header(); ?>
 									</div>
 						<?php endforeach; endif; ?>
 				</div>
+				<hr class="decorative">
 		<?php else: ?>
 					<div class="about-section about-display">
-						<hr class="decorative">
 							<h2><?php echo $section['section_name']?></h2>
 							<?php echo $section['section_content'];?>
 

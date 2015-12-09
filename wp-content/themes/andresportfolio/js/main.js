@@ -16,6 +16,7 @@ jQuery(function ($)  {
   var $window = $(window),
     $mainNav = $('.main-navigation'), // nav wrapper element
     $mastHead = $('.site-header'),
+    $bgImage = $('.bg-image'),
     $displayBranding = $('.display-branding'),// site header element
     $homeBranding = $('.home-site-branding'),
     headerHeightOffset = $mastHead.height() - $mainNav.height(),
@@ -45,8 +46,9 @@ jQuery(function ($)  {
   };
 
   // Initialize nav classes...
-  stickyNav();
-
+  $(window).load(function() {
+    stickyNav();
+  });
   // Then re-run on scroll
   $window.scroll(function () {
       stickyNav();

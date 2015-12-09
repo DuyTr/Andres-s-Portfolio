@@ -2,9 +2,19 @@
 .home .site-header{
   position: relative;
   .bg-image{
-    z-index: -1;
+    z-index: 2;
     min-width: 100%;
     height: auto;
+  }
+  .main-navigation{
+    a{
+      color: $color_pink;
+    }
+  }
+  .fixed-nav{
+    a{
+      color: black;
+    }
   }
 }
 
@@ -12,6 +22,11 @@ body:not(.home) .site-content{
   padding-top: 70px;
   @include bp(tablet) {
     padding-top: 90px;
+  }
+  .main-navigation {
+    a{
+      color: $color_red;
+    }
   }
 }
 
@@ -28,7 +43,7 @@ body:not(.home) .site-content{
   }
   a{
     text-decoration: none;
-    color: $color_pink;
+    color: black;
     font-weight: bold;
   }
   ul a{
@@ -115,7 +130,7 @@ body:not(.home) .site-content{
   }
 }
 
-.current-menu-item, .current-page-ancestor{
+.home .current-menu-item{
   &:first-child{
     border-bottom: 3px solid $color_pink;
   }
@@ -125,7 +140,7 @@ body:not(.home) .site-content{
 }
 
 .fixed-nav {
-  .current-menu-item, .current-page-ancestor{
+  .current-menu-item{
     &:first-child{
       border-bottom: 3px solid $color_red;
     }
