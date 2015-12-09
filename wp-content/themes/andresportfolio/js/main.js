@@ -26,6 +26,7 @@ jQuery(function ($)  {
 // A helper function to check whether nav should be fixed
   var stickyNav = function () {
       var scrollTop = $window.scrollTop();
+      debugger;
       if ( scrollTop > stickyNavTop) {
           $displayBranding.css('visibility','visible');
           $homeBranding.hide();
