@@ -46,8 +46,11 @@ jQuery(function ($)  {
   };
 
   // Initialize nav classes...
-  $(window).load(function() {
-    stickyNav();
+
+  $bgImage.load(function() {
+    setTimeout(function(){
+      stickyNav();
+    },1000);
   });
   // Then re-run on scroll
   $window.scroll(function () {
