@@ -9,7 +9,7 @@ jQuery(function ($)  {
 }).css('background-color', '#ffffff');
 
 
-  $(function() {
+  $(window).load(function() {
     /* Sticky Navbar */
     var $window = $(window),
       $mainNav = $('.main-navigation'), // nav wrapper element
