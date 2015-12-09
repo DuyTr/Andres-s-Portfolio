@@ -32,9 +32,11 @@
 				<?php if( is_home() || is_front_page() ) : ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/dinosaur.jpg" alt="Dinosaur Logo" class="bg-image"/>
 				<?php endif; ?>
-				<div class="home-site-branding site-branding">
-					<h1 class="site-title "><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Andres Navas</a></h1>
-					<p class="site-description">UX + Interaction + UI Designer</p>
-				</div>
+				<?php if( is_home() || is_front_page() ) : ?>
+						<div class="home-site-branding site-branding">
+							<h1 class="site-title "><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Andres Navas</a></h1>
+							<p class="site-description">UX + Interaction + UI Designer</p>
+						</div>
+			<?php endif; ?>
 			</header><!-- #masthead -->
 			<div id="content" class="site-content">
