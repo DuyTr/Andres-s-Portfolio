@@ -956,7 +956,8 @@ body .site-content {
 .project-list {
   width: 100%;
   margin-left: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+  margin-top: 50px; }
   .project-list hr {
     width: 100%; }
   .project-list h3 {
