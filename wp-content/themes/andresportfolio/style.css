@@ -1441,7 +1441,6 @@ body .site-content {
           align-items: center; }
 
 .project-gallery img {
-  box-shadow: 2px 3px 4px;
   width: auto;
   height: 60vw;
   margin: 10px;
