@@ -868,6 +868,9 @@ body:not(.home) .site-content {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  .contact-info a {
+    text-decoration: none;
+    color: #404040; }
 
 /*--------------------------------------------------------------
 # Media

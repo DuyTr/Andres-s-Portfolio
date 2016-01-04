@@ -32,4 +32,8 @@
   @include bp(tablet) {
     justify-content: center;
   }
+  a{
+    text-decoration: none;
+    color: $color__text-main;
+  }
 }
